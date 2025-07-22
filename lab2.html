@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Offer Pricing Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #133d34;
+      margin: 0;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .pricing-table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #a9ccc6;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      flex: 1;
+      transition: transform 0.3s ease;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #09946c;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      font-size: 2rem;
+      color: #424745;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card .btn {
+      margin-top: 15px;
+      background-color: #054434;
+      color: rgb(123, 182, 174);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card .btn:hover {
+      background-color: #f4fffe;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-table {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;"> Great Deals off%</h1>
+  <div class="pricing-table">
+    <div class="card">
+      <h2>Dessert love</h2>
+      <div class="price">₹199</div>
+      <ul>
+        <li>1 Quick sticky toffee pudding</li>
+        <li>1  Cake pops</li>
+        <li>1 Chocolate-dipped strawberries</li>
+        <li>Free Dessert Sample</li>
+      </ul>
+      <button class="btn">Order Now</button>
+    </div>
+    <div class="card">
+      <h2>Ice cream Madness</h2>
+      <div class="price">₹399</div>
+      <ul>
+        <li>1 Mint chocolate chip</li>
+        <li>1 Rocky road</li>
+        <li>1 Salted caramel</li>
+        <li>Sample sweety cream</li>
+      </ul>
+      <button class="btn">Order Now</button>
+    </div>
+    <div class="card">
+      <h2>Differ cake</h2>
+      <div class="price">₹699</div>
+      <ul>
+        <li>2 Angle cake</li>
+        <li>1 Apple cake</li>
+        <li>2 Tiramisu</li>
+        <li>Tasty cake</li>
+      </ul>
+      <button class="btn">Order Now</button>
+    </div>
+  </div>
+</body>
+</html>
